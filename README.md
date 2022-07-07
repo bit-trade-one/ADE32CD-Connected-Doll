@@ -1,94 +1,43 @@
-# -ADXXXXX-Template
+# ADE32CD-オーディオストリーミングスタンド開発ボードの動作確認
 
-## ここに見出し
+### *製品ページは[こちら](http://bit-trade-one.co.jp/ADE32CD)*.
 
-![タイトル画像のURLを右のカッコに]()
+### [回路図](https://github.com/bit-trade-one/RasPi-Zero-One-Series/blob/master/3rd/ADE32CD/Schematics/ADE32CM_Schematics.pdf)
 
-「●●●●●」はほにゃららするためのなんちゃらボード。  
-この製品を使用する事でもにょもにょがぺけぺけできる。  
-(ここの説明は3行未満で良い)
+## ファイルリスト
+- Readme.md             ［本文書］
+- bt_speaker_demo.ino    [Bluetoothスピーカーサンプルプログラム］
 
-<!--
-改行する場合、文末に半角スペース2個を置く
+## 開発環境
+本製品の動作確認は、以下の環境で実施することを前提としております。
+- Arduino IDE<BR>
+  Arduino IDE 1.8.19
+- ライブラリ<BR>
+FastLED 3.5.0<BR>
+[ESP32-A2DP 1.7.0](https://github.com/pschatzmann/ESP32-A2DP) @pschatzmann氏のESP32-A2DPライブラリを使用させていただきました。<BR>
+Thanks to @pschatzmann, author of the ESP32-A2DP library.
 
-リンクの貼り方
-[リンクになる文章](URL)
-exp.
-[Google](https://www.google.co.jp/)
+## インストール
+- FastLEDライブラリ3.5.0<BR> 
+Arduino IDEのライブラリマネージャからインストールしてください。
+![](./img/%20%20%20Readme2022-06-21-16-22-53.png)
 
-画像の貼り方
-![画像が読めない時に表示されるテキスト](画像のURL)
-exp.
-![bit-trade-one](https://bit-trade-one.co.jp/wp/wp-content/uploads/tcd-w/logo.png)
-※先頭の"!"を忘れないこと
+- ESP32-A2DP 1.7.0<BR>
+GitHubからzip形式でダウンロード後、Arduino IDEの「スケッチ」「ライブラリをインクルード」「.ZIP形式のライブラリをインストール」を選択し、ダウンロードしたzipファイルを指定します。
+![](./img/%20%20%20Readme2022-06-21-16-23-53.png)
 
+- bt_spaker_demo<BR>
+Arduino IDEの「ファイル」「開く」から予めダウンロード済みの「bt_speaker_demo.ino」を入力します。
+![](./img/%20%20%20Readme2022-06-21-16-35-54.png)
 
-見出しの付け方
+- Arduino IDEの設定<BR>
+「ツール」メニューから「ボード」は「ESP32 Dev Module」、「シリアルポート」はコネクティッドドールをを接続したCOM番号を指定します。
+![](./img/%20%20%20Readme2022-06-21-16-39-11.png)
 
-# 見出し1
+- ビルドとインストール<BR>
+「スケッチ」「マイコンボードに書き込む」からビルドとインストールを実施します。
+書込みが完了すると、基板周辺の4つのLEDのが赤く点灯します。
 
-## 見出し1-1
-
-###　見出し1-2
-
-# 見出し2
-
-"#"を増やすと下位の見出しになる
-
-以下のURL内の"-ADXXXXX-Template"をリポジトリ名/ファイル名に変更 
-
-製品によって無い情報(ライブラリへのリンクなど)は削除すること
-
-ソフトの使い方、ライブラリの使い方などがWordなどである場合は、
-各情報フォルダにMarkdown形式に起こし"Readme.md"という名前で保存すること
--->
-
-## [HPリンク](http://bit-trade-one.co.jp/) 
-
-## [マニュアル](https://github.com/bit-trade-one/-ADXXXXX-Template/raw/master/Manual)
-
-## [アプリケーションソフトウェア](https://github.com/bit-trade-one/-ADXXXXX-Template/raw/master/App/)  
-
-## [ファームウェア](https://github.com/bit-trade-one/-ADXXXXX-Template/raw/master/Firmware/)
-
-## [Q&A](FAQ.md)
-
-### [ライブラリ](https://github.com/bit-trade-one/-ADXXXXX-Template/raw/master/Library)  
-
-### [サンプルコード](https://github.com/bit-trade-one/-ADXXXXX-Template/raw/master/Sample)  
-
-### [アプリケーションソース](https://github.com/bit-trade-one/-ADXXXXX-Template/raw/master/App_source/)  
-
-### [ファームウェアソース](https://github.com/bit-trade-one/-ADXXXXX-Template/raw/master/Firmware_source/)
-
-### [基板図](https://github.com/bit-trade-one/-ADXXXXX-Template/blob/master/Dimensions/-ADXXXXX-Template-Dimensions.pdf)
-
-### [回路図](https://github.com/bit-trade-one/-ADXXXXX-Templateo/blob/master/Schematics/-ADXXXXX-Template-Schematics.pdf)
-
-### [部品表](https://github.com/bit-trade-one-ADXXXXX-Templateo/blob/master/Partslist/-ADXXXXX-Template-Partslist.md)
-
-
-## 作例
-
-[BTO公式]()  
-[Twitter作例1]()  
-[Twitter作例2]()  
-[ブログ作例1]()  
-[ブログ作例1]()  
-
-## 雑誌掲載情報
-
-[ラズパイマガジンXX年Y月号]()  
-[Pc Watch]()
-
-## 製品仕様
-    【対応OS】Windows7以降
-    【サイズ】W16×D20×H5mm
-    【重量】約1g
-    【入力点数】12(デジタル)
-    【コネクタ】USBマイクロB
-    【電源】5V (USBマイクロB)
-    【使用温度】0 ～ 40℃（結露なきこと）
-    【保証期間】 1年間
-    【付属品】保証書 1部
-    【生産国】Made in Japan
+## 使用方法
+IOSやAndroidのBluetoothメニューから、デバイス名「BTO_Music」を選択肢し、ペアリングします。その後、音楽プレーヤー等で音楽等を再生してください。
+音楽等が再生できること、および再生中に基板周辺のLEDが点滅することを確認してください。 
