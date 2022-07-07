@@ -1,4 +1,4 @@
-# ADE32CD-オーディオストリーミングスタンド開発ボード
+## ADE32CD-オーディオストリーミングスタンド開発ボード「Connected Doll」
 
 ### *製品ページは[こちら](http://bit-trade-one.co.jp/ADE32CD)*.
 
