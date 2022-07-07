@@ -4,10 +4,6 @@
 
 ### [回路図](https://github.com/bit-trade-one/ADE32CD-Connected-Doll/blob/master/Schematics/ADE32CM_V1.1_Schematics.pdf)
 
-## ファイルリスト
-- Readme.md             ［本文書］
-- bt_speaker_demo.ino    [Bluetoothスピーカーサンプルプログラム］
-
 ## 開発環境
 本製品の動作確認は、以下の環境で実施することを前提としております。
 - Arduino IDE<BR>
