@@ -1,6 +1,6 @@
 ## ADE32CD-オーディオストリーミングスタンド開発ボード「Connected Doll」
 
-### *製品ページは[こちら](http://bit-trade-one.co.jp/ADE32CD)*.
+### *[製品HP](http://bit-trade-one.co.jp/ADE32CD)*
 
 ### [回路図](https://github.com/bit-trade-one/RasPi-Zero-One-Series/blob/master/3rd/ADE32CD/Schematics/ADE32CM_Schematics.pdf)
 
