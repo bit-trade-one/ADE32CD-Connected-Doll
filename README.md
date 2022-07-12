@@ -24,7 +24,7 @@ Thanks to @pschatzmann, author of the ESP32-A2DP library.
 ## インストール
 - ボードマネージャーの設定<BR>
 ESP32ボードマネージャのURLを、Arduino環境設定ダイアログの追加のボードマネージャのURL欄に追加します。<BR>
-![](./img/%20%20%20README2022-07-12-09-28-24.png)
+![](./img/README2022-07-12-09-28-24.png)
 ```
 https://raw.githubusercontent.com/espressif/arduino-esp32/gh-pages/package_esp32_index.json
 ```
