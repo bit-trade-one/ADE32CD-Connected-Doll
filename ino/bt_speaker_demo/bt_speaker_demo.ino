@@ -66,7 +66,8 @@ static void on_data_receive_callback(void) {
     count++;
     count %= LED_DELAY;
     if (count == 0) {
-        step = ++step % 4;
+        step++;
+        step = step % 4;
     } 
 }
 
