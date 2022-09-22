@@ -2,6 +2,8 @@
 
 ### *製品ページは[こちら](http://bit-trade-one.co.jp/ADE32CD)*.
 
+### *ほかサンプルは[こちら](https://github.com/ConnectedDoll/examples)*.
+
 ### [回路図](https://github.com/bit-trade-one/ADE32CD-Connected-Doll/blob/master/Schematics/ADE32CM_V1.1_Schematics.pdf)
 
 ## ファイルリスト
