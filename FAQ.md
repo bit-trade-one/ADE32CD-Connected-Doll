@@ -1,28 +1,58 @@
-# ADXXXXX-Template よくある質問
+# ADE32CD よくある質問
 
 ---
 
-## Q.XXXとはなんですか？
+## Q. I2CピンヘッダのGPIOピン番号は？
 
-### A.YYYです。結論がここにドカンと　見出し\#行で上下1行空けるのはMarkdownの書式
+### A. I2Cピンヘッダのピンアサインを以下に示します。  
 
-Lorem ipsum dolor sit amet, consectetur  
-返答の詳細がバーっと  
-adipiscing elit, sed do eiusmod tempor incididunt ut  
+ESP32の標準ピンアサインとは異なりますのでご注意ください  
 
----
-
-## Q.XXXをZZZ出来ますか？  
-
-### A.はい、可能です。  
-
-labore et dolore magna aliqua. Ut enim  
-ad minim veniam, quis nostrud exercitation  
+|  I2C  | ADE32CD | ESP32標準 |
+| ----- | ------- | --------- |
+|  SCL  |   IO22  |   IO22    |
+|  SDA  |   IO23  |   IO21    |
 
 ---
 
-## Q.YYYでなくWWWとして使いたいです
+## Q. SPIピンヘッダのGPIOピン番号は？
 
-### A.申し訳ありませんが対応しておりません。  
+### A. SPIピンヘッダのピンアサインを以下に示します。  
 
-ullamco laboris nisi ut aliquip ex ea commodo consequat.   
+ESP32の標準ピンアサインとは異なりますのでご注意ください。  
+使用するライブラリによってはピンアサイン変更不可のものもあるためご注意願います。  
+
+| SPI  | ADE32CD | VSPI標準 |
+| ---- | ------- | -------- |
+| MISO | IO19    | IO19     |
+| MOSI | IO18    | IO23     |
+| SCK  | IO5     | IO18     |
+| CS0  | IO18    | IO5(任意)|
+| CS1  | IO18    | (任意)   |
+
+---
+
+## Q. TOUCHピンヘッダのGPIOピン番号は？
+
+### A. TOUCHピンヘッダピンのピンアサインは、ESP32とは表記と順序が異なっています。
+__また、申し訳ありませんが製品基板 ADE32CD Ver1.1において  
+タッチスイッチコネクタ（J4 TOUCH)の基板裏面シルク印字に間違いがあります(誤：T7,T8,T9⇒正：T9,T8,T7)__  
+ソフトウェアから見たピンアサインは、1番ピンから順にTOUCH8(GPIO33),TOUCH9(GPIO32),TOUCH7(GPIO27)となります  
+
+| TOUCH | ADE32CD | ESP32  |
+| ----- | ------- | ------ |
+|  T9   | GPIO33  | TOUCH8 |
+|  T8   | GPIO32  | TOUCH9 |
+|  T7   | GPIO27  | TOUCH7 |
+
+---
+
+## Q. I2SピンヘッダのGPIOピン番号は？
+
+### A. I2Sピンヘッダのピンアサインを以下に示します
+
+| I2S   | ADE32CD |
+| ----- | ------- |
+| DIN   | IO21    |
+| LRCLK | IO25    |
+| BCLK  | IO26    |
