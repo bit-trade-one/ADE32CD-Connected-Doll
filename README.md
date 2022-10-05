@@ -6,6 +6,8 @@
 
 ### [回路図](https://github.com/bit-trade-one/ADE32CD-Connected-Doll/blob/master/Schematics/ADE32CM_V1.1_Schematics.pdf)
 
+### [FAQ](https://github.com/bit-trade-one/ADE32CD-Connected-Doll/blob/master/FAQ.md)
+
 ## ファイルリスト
 - Readme.md             ［本文書］
 - bt_speaker_demo.ino    [Bluetoothスピーカーサンプルプログラム］
