@@ -2,7 +2,11 @@
 
 ### *製品ページは[こちら](http://bit-trade-one.co.jp/ADE32CD)*.
 
-### *ほかサンプルは[こちら](https://github.com/ConnectedDoll/examples)*.
+### *他サンプル*
+
+ - [ConnectedDoll サンプルリポジトリ](https://github.com/ConnectedDoll/examples#connecteddoll-%E3%82%B5%E3%83%B3%E3%83%97%E3%83%AB%E3%83%AA%E3%83%9D%E3%82%B8%E3%83%88%E3%83%AA)
+
+ - [OpenAI ChatAPI  (GPT) に繋ぐためのライブラリ](https://github.com/tfuru/ESP32OpenAIChatAPI#esp32openaichatapi)
 
 ### [回路図](https://github.com/bit-trade-one/ADE32CD-Connected-Doll/blob/master/Schematics/ADE32CM_V1.1_Schematics.pdf)
 
